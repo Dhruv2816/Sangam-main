@@ -1,0 +1,48 @@
+/* Grid Layout for Team Members */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Default to 3 columns */
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.team-card {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.team-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.team-content {
+    padding: 1rem;
+    text-align: center;
+}
+
+.team-content h3 {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.team-content b {
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .team-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .team-content {
+        font-size: 0.9rem;
+    }
+}

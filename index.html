@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sangam Home</title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="img/WhatsApp-Image-2024-10-09-at-16.51.14_088ab422.ico" type="image/ico">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<nav>
+		<img src="Sangam/sangam-removebg-preview.png" class="logo" alt="">
+
+		<div class="navigation">
+			<ul>
+				<i id="menu-close" class="fas fa-times"></i>
+				<li><a href="Home.html" class="active">Home</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="Team.html">Team</a></li>
+				<li><a href="Editions.html">Edition</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+
+			<img src="img/menu.png" id="menu-btn" alt="">
+		</div>
+	</nav>
+	<section id="home">
+		<h2>
+			IIT JAMMU'S SEMESTER SAGA
+		</h2>
+		<p>
+			Where we transform ideas into reality.
+		</p>
+		<div class="btn">
+			<a href="https://drive.google.com/file/d/1k_E7MaYw8TjFxQ6K8Hmn0lqEFWY3edYa/view?usp=sharing" class="blue">Latest Edition</a>
+			<a href="https://www.iitjammu.ac.in/" class="blue">Visit IIT JAMMU</a>
+		</div>
+	</section>
+	<section class="note">
+		<h1 class="title-text">Editor's Note</h1>
+		<div class="note-row">
+			<div class="note-col">
+				<img src="img/kanishka square 2.jpeg" alt="Editor's Photo">
+				<h3>Kanishka Chholak</h3>
+				<h4>Founder & Chief Editor</h4>
+				<p class="note-content">
+					It is with immense pride and heartfelt joy that I welcome you as the Chief Editor of our esteemed magazine, SANGAM. As we unveil the institute magazine, we do so with the hope that the passion, creativity, and dedication we’ve invested will captivate and enrich your experience.
+For us students, there is no better platform to share our voices and ideas with the world than through the pages of our very own publication. SANGAM has offered us the opportunity to explore the boundless realms of imagination, giving life to our thoughts and perspectives. With each article, photograph, and story, we have sought to capture the most defining moments of the vibrant semester that has just passed, giving you a window into the colourful journey we've all shared.
+The name SANGAM was not chosen by chance. It symbolizes unity, collaboration, and the convergence of diverse ideas—values that form the very essence of our community. Being a part of this creative endeavor, watching an idea blossom into reality, has been a deeply fulfilling experience for all of us. While we recognize that we still have room to grow, we are committed to improving with each edition, learning from feedback, and refining our vision. Our ultimate goal is to see SANGAM thrive, establishing it as a proud tradition of IIT Jammu.
+We firmly believe that, with the unwavering support of our peers and the guidance of our esteemed faculty, we can turn this vision into reality. As we continue to navigate through the ever-evolving landscape of student life, I invite you to immerse yourself in the stories and ideas that fill these pages. Thank you for being a part of this journey with us. We value your readership and we look forward to sharing stories that inspire, challenge, and resonate with you in the editions to come.
+Enjoy the read!
+				</p>
+			</div>
+		</div>
+	</section>
+	
+
+	<!-- <section id="course">
+		<h1>Photo Gallery</h1>    
+	
+		<div class="course-box">
+			<div class="courses">
+				<img src="Sangam/sangam distribution 2.png" alt="">
+			</div>
+	
+			<div class="courses">
+				<img src="Sangam/sangam distribution 1.png" alt="">
+			</div>
+	
+			<div class="courses">
+				<img src="Sangam/IMG20240228113604.jpg" alt="">
+			</div>
+			
+			<div class="courses">
+				<img src="Sangam/sangam distribution 2.png" alt="">
+			</div>
+	
+			<div class="courses">
+				<img src="Sangam/sangam distribution 1.png" alt="">
+			</div>
+	
+			<div class="courses">
+				<img src="Sangam/IMG20240228113604.jpg" alt="">
+			</div>
+		</div>
+	</section> -->
+	<section id="course">
+		<h1>Photo Gallery</h1>    
+	</section>
+	<div class ="gallery-wrap">
+		<img src = "img/back.png" id = "backbtn">
+		<div class="gallery">
+			<div>
+				<span><img src="Sangam/sangam distribution 2.png" alt=""></span>
+				<span><img src="Sangam/sangam distribution 1.png" alt=""></span>
+				<span><img src="Sangam/IMG20240228113604.jpg" alt=""></span>
+			</div>
+			<div>
+				<span><img src="img/Foundation Program 2.JPG" alt=""></span>
+				<span><img src="img/Foundation Program 3.JPG" alt=""></span>
+				<span><img src="img/Foundation Program 4.JPG" alt=""></span>
+			</div>
+			<div>
+				<span><img src="img/Foundation Program 5.JPG" alt=""></span>
+				<span><img src="img/Foundation Program.JPG" alt=""></span>
+				<span><img src="img/Foundation Program 6.JPG" alt=""></span>
+			</div>
+		</div>
+		<img src = "img/next.png" id = "nextbtn">
+	</div>
+
+	<script>
+		let scrollContainer = document.querySelector(".gallery");
+		let backbtn = document.getElementById("backbtn");
+		let nextbtn = document.getElementById("nextbtn");
+		scrollContainer.addEventListener("wheel", (evt) =>{
+			evt.preventDefault();
+			scrollContainer.scrollLeft += evt.deltaY;
+			scrollContainer.style.scrollBehavior = "smooth";
+		} )
+
+		nextbtn.addEventListener("click",() =>{
+			scrollContainer.style.scrollBehavior = "smooth";
+			scrollContainer.scrollLeft += 300;
+		})
+		backbtn.addEventListener("click",() =>{
+			
+			scrollContainer.style.scrollBehavior = "smooth";
+			scrollContainer.scrollLeft -= 300;
+		})
+	</script>
+	
+	<section id="registration">
+		<div class="reminder">
+			<h1>Fill The Form For your Stories</h1>
+
+			<div class="time">
+				<div class ="date">And Get Featured in Next Edition</div>
+			</div>
+		</div>
+
+		<div class="form">
+			<h3>Enter Here To Get Featured !</h3>
+
+
+			<div class="btn" >
+				<a href="https://docs.google.com/forms/d/e/1FAIpQLSe4HYhbi2VPeJFd25yNfU8nQIGKWgTAcIpIvLRxlCKYbjKGVA/viewform?usp=pp_url" class="yellow">Submit Your Entries</a>
+			</div>
+		</div>
+	</section>
+	
+	<footer>
+		<div class="footer-container">
+			<div class="footer-col">
+				<h3>IIT Jammu</h3>
+				<p>Indian Institute of Technology Jammu<br>
+					Jagti, NH-44 , PO Nagrota<br>
+					Jammu - 181 221 J&K, India.</p>
+				
+			</div>
+			<div class="footer-col">
+				<h3>Contact Us</h3>
+				<p><i class="fas fa-envelope"></i> Sangam@iitjammu.ac.in</p>
+			</div>
+		</div>
+		<div class="copyright">
+			<div class="pro-links">
+				<i class="fab fa-facebook"></i>
+				<a href="https://www.instagram.com/sangam.iitjmu?igsh=dXZ3azVuaXdnb3Ey" target="_blank">
+					<i class="fab fa-instagram"></i>
+				</a>
+				  
+				<i class="fab fa-linkedin-in"></i>
+			</div>
+		</div>
+	</footer>
+	
+
+	<script>
+		$('#menu-btn').click(function(){
+			$('nav .navigation ul').addClass('active')
+		});
+		$('#menu-close').click(function(){
+			$('nav .navigation ul').removeClass('active')
+		});
+	</script>
+</body>
+</html>
